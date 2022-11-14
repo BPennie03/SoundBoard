@@ -13,6 +13,7 @@ public class Main {
        new Main();
     }
     public Main(){
+        //JFrame.setDefaultLookAndFeelDecorated(true);
         JFrame frame = new JFrame("Soundboard");
         frame.setSize(500, 500);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

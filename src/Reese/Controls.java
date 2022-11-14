@@ -2,6 +2,7 @@ package Reese;
 
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
+import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -14,6 +15,7 @@ public class Controls extends JPanel {
     public Controls(JFrame mainFrame){
 
         this.mainFrame = mainFrame;
+        this.setBackground(Color.decode("#7B64ED"));
         initChooser();
         initRefresh();
         //do other stuff
@@ -30,14 +32,13 @@ public class Controls extends JPanel {
 
             //ignore
             choosah.showOpenDialog(null);
+            try{
+                File selectedFile = choosah.getSelectedFile();
+                File dir = new File("./audio/" + selectedFile.getName());
 
-            File selectedFile = choosah.getSelectedFile();
-            File dir = new File("./audio/" + selectedFile.getName());
-            try {
                 Files.copy(selectedFile.toPath(), dir.toPath(), StandardCopyOption.COPY_ATTRIBUTES);
-                //need to remake the buttons
-            } catch (IOException ex) {
-                throw new RuntimeException(ex);
+            } catch (IOException | NullPointerException ex) {
+                System.out.println("No file was selected!");
             }
 
         });

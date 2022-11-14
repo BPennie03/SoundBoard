@@ -14,6 +14,8 @@ public class Soundboard extends JPanel {
         layout.setColumns(size);
         layout.setRows(size);
         this.setLayout(layout);
+        Color panelColor = Color.decode("#541675");
+        this.setBackground(panelColor);
 
         File dir = new File("./audio");
 
