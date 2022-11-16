@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 public class Soundboard extends JPanel {
-
     public Soundboard(int size) {
 
         GridLayout layout = new GridLayout();
@@ -47,5 +46,7 @@ public class Soundboard extends JPanel {
     public static String getName(String filename) {
         return filename.substring(filename.lastIndexOf('/')+1, filename.lastIndexOf('.'));
     }
+
+
 
 }

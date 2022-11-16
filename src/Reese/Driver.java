@@ -13,7 +13,7 @@ public class Driver {
        new Driver();
     }
     public Driver(){
-        //JFrame.setDefaultLookAndFeelDecorated(true);
+        JFrame.setDefaultLookAndFeelDecorated(true);
         JFrame frame = new JFrame("Soundboard");
         frame.setSize(500, 500);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -31,7 +31,20 @@ public class Driver {
         frame.setIconImage(new ImageIcon("assets/TFSB.png).getImage);
         Taskbar thing only works java 9+
          */
-        Taskbar.getTaskbar().setIconImage(new ImageIcon("assets/TFSB.png").getImage());
+
+//        System.out.println(System.getProperty("os.name")); // --> "Mac OS X"
+//        Taskbar.getTaskbar().setIconImage(new ImageIcon("assets/TFSB.png").getImage());
+        try{
+            if(Utils.getOS() == OS.OSX){
+                Taskbar.getTaskbar().setIconImage(new ImageIcon("assets/TFSB.png").getImage());
+            }
+            else{
+                frame.setIconImage(new ImageIcon("asset/TFSB").getImage());
+            }
+        }
+        catch (OperatingSystemNotFoundException e){
+            e.printStackTrace();
+        }
 
         frame.add(root);
         frame.setVisible(true);
