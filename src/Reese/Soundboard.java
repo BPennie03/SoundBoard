@@ -30,11 +30,6 @@ public class Soundboard extends JPanel {
         }
         for(SoundButton b : btns){
             if(!b.getAudioFile().endsWith("wav")) continue;
-
-
-            b.setText(b.getName());
-            b.setBackground(Color.BLUE);
-            b.setOpaque(true);
             b.addActionListener(e ->{
                 try{
                     b.play();
