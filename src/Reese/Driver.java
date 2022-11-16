@@ -8,22 +8,30 @@ import java.awt.event.WindowEvent;
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class Driver {
     public static void main(String[] args) {
-       new Main();
+       new Driver();
     }
-    public Main(){
+    public Driver(){
         //JFrame.setDefaultLookAndFeelDecorated(true);
         JFrame frame = new JFrame("Soundboard");
         frame.setSize(500, 500);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLocationRelativeTo(null);
 
+
         JPanel root = new JPanel();
         root.setLayout(new BorderLayout());
         root.add(new Soundboard(getSizeOfBoard()), BorderLayout.CENTER);
         root.add(new Controls(frame),BorderLayout.SOUTH);
         root.setVisible(true);
+
+        /*
+        Need to test if this works on Windows. If it doesn't need to add
+        frame.setIconImage(new ImageIcon("assets/TFSB.png).getImage);
+        Taskbar thing only works java 9+
+         */
+        Taskbar.getTaskbar().setIconImage(new ImageIcon("assets/TFSB.png").getImage());
 
         frame.add(root);
         frame.setVisible(true);

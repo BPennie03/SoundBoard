@@ -11,7 +11,6 @@ import java.nio.file.StandardCopyOption;
 public class Controls extends JPanel {
 
     private final JFrame mainFrame;
-
     public Controls(JFrame mainFrame){
 
         this.mainFrame = mainFrame;
@@ -51,7 +50,7 @@ public class Controls extends JPanel {
         btn.setText("Refresh");
         btn.addActionListener(e ->{
             mainFrame.dispose();
-            new Main();
+            new Driver();
         });
 
         this.add(btn);

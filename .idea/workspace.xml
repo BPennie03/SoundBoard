@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="faf93a7b-c282-41a5-9221-439a329f2ab6" name="Changes" comment="Updated gitignore">
-      <change afterPath="$PROJECT_DIR$/assets/button.png" afterDir="false" />
+    <list default="true" id="faf93a7b-c282-41a5-9221-439a329f2ab6" name="Changes" comment="Updated UI colors">
+      <change afterPath="$PROJECT_DIR$/assets/TFSB.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/audio/BecomeAJoke.wav" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/audio/ClownHorn.wav" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/audio/ForgotCopyPaste.wav" afterDir="false" />
@@ -17,12 +17,10 @@
       <change afterPath="$PROJECT_DIR$/audio/Software1.wav" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/audio/Software2.wav" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/audio/VineBoom.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/button.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Reese/Controls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reese/Controls.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Reese/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reese/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Reese/SoundButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reese/SoundButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Reese/Soundboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reese/Soundboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Reese/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reese/Driver.java" afterDir="false" />
     </list>
     <list id="6672c02c-adcf-4128-a04c-eb3d7e937117" name="Changes by bpennie" comment="">
       <change beforePath="$PROJECT_DIR$/src/Reese/SoundButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reese/SoundButton.java" afterDir="false" />
@@ -42,26 +40,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/Reese/SoundButton.java">
-      <ranges>
-        <range start1="4" end1="4" start2="4" end2="9" changelist="faf93a7b-c282-41a5-9221-439a329f2ab6" />
-        <range start1="6" end1="8" start2="11" end2="12" changelist="faf93a7b-c282-41a5-9221-439a329f2ab6" />
-        <range start1="11" end1="11" start2="15" end2="20" changelist="6672c02c-adcf-4128-a04c-eb3d7e937117" />
-        <range start1="13" end1="14" start2="22" end2="23" changelist="6672c02c-adcf-4128-a04c-eb3d7e937117" />
-        <range start1="15" end1="15" start2="24" end2="33" changelist="faf93a7b-c282-41a5-9221-439a329f2ab6" />
-        <range start1="31" end1="32" start2="49" end2="49" changelist="6672c02c-adcf-4128-a04c-eb3d7e937117" />
-        <range start1="33" end1="34" start2="50" end2="51" changelist="6672c02c-adcf-4128-a04c-eb3d7e937117" />
-        <range start1="38" end1="38" start2="55" end2="83" changelist="6672c02c-adcf-4128-a04c-eb3d7e937117" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/Reese/Soundboard.java">
-      <ranges>
-        <range start1="16" end1="16" start2="16" end2="18" changelist="faf93a7b-c282-41a5-9221-439a329f2ab6" />
-        <range start1="30" end1="35" start2="32" end2="32" changelist="6672c02c-adcf-4128-a04c-eb3d7e937117" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -87,7 +65,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -99,7 +77,7 @@
     <configuration name="SoundBoard" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="$USER_HOME$/Library/Java/JavaVirtualMachines/openjdk-18.0.1.1/Contents/Home" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Reese.Main" />
+      <option name="MAIN_CLASS_NAME" value="Reese.Driver" />
       <module name="SoundBoardProject" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -121,7 +99,7 @@
       <workItem from="1668439459940" duration="3551000" />
       <workItem from="1668453160861" duration="9000" />
       <workItem from="1668453173852" duration="161000" />
-      <workItem from="1668453380414" duration="8416000" />
+      <workItem from="1668453380414" duration="14857000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit after JPanel Fix">
       <created>1668447038306</created>
@@ -137,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668452955955</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Updated UI colors">
+      <created>1668464701117</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668464701117</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,7 +143,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial Commit after JPanel Fix" />
     <MESSAGE value="Updated gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated gitignore" />
+    <MESSAGE value="Updated UI colors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated UI colors" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SoundBoard$SoundBoard.ic" NAME="SoundBoard Coverage Results" MODIFIED="1668117498513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
