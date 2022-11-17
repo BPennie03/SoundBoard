@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.io.File;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Objects;
 
 public class Soundboard extends JPanel {
@@ -22,7 +23,7 @@ public class Soundboard extends JPanel {
     }
 
     public void makeButtons(File[] files) {
-        ArrayList<SoundButton> btns = new ArrayList<>();
+        LinkedList<SoundButton> btns = new LinkedList<>();
         for (File file : files) {
             File filename = new File(file.getAbsolutePath());
             btns.add(new SoundButton(getName(file.getAbsolutePath()), filename));
