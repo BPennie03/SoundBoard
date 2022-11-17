@@ -1,4 +1,4 @@
-package Reese;
+package com.tomfoolery.soundboard.SoundBoard;
 
 import javax.sound.sampled.*;
 import javax.swing.*;

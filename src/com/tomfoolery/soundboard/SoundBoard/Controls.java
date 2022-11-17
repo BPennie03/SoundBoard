@@ -1,4 +1,4 @@
-package Reese;
+package com.tomfoolery.soundboard.SoundBoard;
 
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
