@@ -56,15 +56,18 @@ public class SoundButton extends JButton implements MouseListener {
         return this.name;
     }
 
-    @Override public void mouseClicked(MouseEvent e){}
+    @Override
+    public void mouseClicked(MouseEvent e){}
 
-    @Override public void mouseReleased(MouseEvent e){
+    @Override
+    public void mouseReleased(MouseEvent e){
         if (e.getSource()==this) {
             this.setBorder(new BevelBorder(BevelBorder.RAISED, this.borderColor1, this.borderColor2));
         }
     }
 
-    @Override public void mousePressed(MouseEvent e){
+    @Override
+    public void mousePressed(MouseEvent e){
         if (e.getSource()==this) {
             this.setBorder(new BevelBorder(BevelBorder.LOWERED, this.borderColor1, this.borderColor2));
         }

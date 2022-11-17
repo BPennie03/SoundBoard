@@ -3,7 +3,6 @@ package com.tomfoolery.soundboard;
 import javax.swing.*;
 import java.awt.*;
 import java.io.File;
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Objects;
 
@@ -47,7 +46,5 @@ public class Soundboard extends JPanel {
     public static String getName(String filename) {
         return filename.substring(filename.lastIndexOf('/')+1, filename.lastIndexOf('.'));
     }
-
-
 
 }
