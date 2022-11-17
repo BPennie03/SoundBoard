@@ -19,7 +19,7 @@ public class SoundButton extends JButton implements MouseListener {
 
 
     public SoundButton(String name, File f) {
-        this.name = name.toUpperCase();
+        this.name = name;
         this.audioFile = f;
         initSoundButton();
     }
