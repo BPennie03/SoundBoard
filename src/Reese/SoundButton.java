@@ -21,6 +21,10 @@ public class SoundButton extends JButton implements MouseListener {
     public SoundButton(String name, File f) {
         this.name = name.toUpperCase();
         this.audioFile = f;
+        initSoundButton();
+    }
+
+    public void initSoundButton(){
         this.setFocusPainted(false);
         this.setText(name);
         this.setBorder(new BevelBorder(BevelBorder.RAISED, this.borderColor1, this.borderColor2));
