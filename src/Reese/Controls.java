@@ -28,14 +28,15 @@ public class Controls extends JPanel {
             JFileChooser choosah = new JFileChooser();
             FileNameExtensionFilter filter = new FileNameExtensionFilter(".WAV files only", "wav");
             choosah.setFileFilter(filter);
+            choosah.setMultiSelectionEnabled(true);
 
-            //ignore
             choosah.showOpenDialog(null);
             try{
-                File selectedFile = choosah.getSelectedFile();
-                File dir = new File("./audio/" + selectedFile.getName());
-
-                Files.copy(selectedFile.toPath(), dir.toPath(), StandardCopyOption.COPY_ATTRIBUTES);
+                File[] selectedFiles = choosah.getSelectedFiles();
+                for (File selectedFile : selectedFiles) {
+                    File dir = new File("./audio/" + selectedFile.getName());
+                    Files.copy(selectedFile.toPath(), dir.toPath(), StandardCopyOption.COPY_ATTRIBUTES);
+                }
             } catch (IOException | NullPointerException ex) {
                 System.out.println("No file was selected!");
             }
