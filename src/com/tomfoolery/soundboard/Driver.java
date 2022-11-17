@@ -23,8 +23,7 @@ public class Driver {
         frame.setLocationRelativeTo(null);
 
 
-        JPanel root = new JPanel();
-        root.setLayout(new BorderLayout());
+        JPanel root = new JPanel(new BorderLayout());
         root.add(new Soundboard(Utils.getSizeOfBoard()), BorderLayout.CENTER);
         root.add(new Controls(frame),BorderLayout.SOUTH);
         root.setVisible(true);
@@ -37,8 +36,6 @@ public class Driver {
         try{
             if(Utils.getOS() == OS.OSX){
                 Taskbar.getTaskbar().setIconImage(new ImageIcon("assets/TFSB.png").getImage());
-                //comment from braden's laptop
-                //comment from reese
             }
             else{
                 frame.setIconImage(new ImageIcon("asset/TFSB").getImage());
@@ -52,9 +49,6 @@ public class Driver {
         frame.setVisible(true);
         playOutro(frame, "audio/ByeBye.wav");
     }
-
-
-
 
     public static void playOutro(JFrame frame, String s){
         frame.addWindowListener(new WindowAdapter() {

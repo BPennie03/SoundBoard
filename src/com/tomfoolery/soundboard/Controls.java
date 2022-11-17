@@ -21,8 +21,7 @@ public class Controls extends JPanel {
     }
 
     public void initChooser(){
-        JButton btn = new JButton();
-        btn.setText("Add Sound!");
+        JButton btn = new JButton("Add Sound!");
         btn.addActionListener(e ->{
 
             JFileChooser choosah = new JFileChooser();
@@ -47,8 +46,7 @@ public class Controls extends JPanel {
     }
 
     public void initRefresh(){
-        JButton btn = new JButton();
-        btn.setText("Refresh");
+        JButton btn = new JButton("Refresh");
         btn.addActionListener(e ->{
             mainFrame.dispose();
             new Driver();
