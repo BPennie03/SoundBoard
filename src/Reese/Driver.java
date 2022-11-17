@@ -31,13 +31,11 @@ public class Driver {
         frame.setIconImage(new ImageIcon("assets/TFSB.png).getImage);
         Taskbar thing only works java 9+
          */
-
-//        System.out.println(System.getProperty("os.name")); // --> "Mac OS X"
-//        Taskbar.getTaskbar().setIconImage(new ImageIcon("assets/TFSB.png").getImage());
         try{
             if(Utils.getOS() == OS.OSX){
                 Taskbar.getTaskbar().setIconImage(new ImageIcon("assets/TFSB.png").getImage());
                 //comment from braden's laptop
+                //comment from reese
             }
             else{
                 frame.setIconImage(new ImageIcon("asset/TFSB").getImage());
