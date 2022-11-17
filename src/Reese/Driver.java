@@ -22,7 +22,7 @@ public class Driver {
 
         JPanel root = new JPanel();
         root.setLayout(new BorderLayout());
-        root.add(new Soundboard(getSizeOfBoard()), BorderLayout.CENTER);
+        root.add(new Soundboard(Utils.getSizeOfBoard()), BorderLayout.CENTER);
         root.add(new Controls(frame),BorderLayout.SOUTH);
         root.setVisible(true);
 
@@ -51,11 +51,7 @@ public class Driver {
     }
 
 
-    public static int getSizeOfBoard(){
-        File dir = new File("./audio");
-        int numFiles = Objects.requireNonNull(dir.list()).length;
-        return ((int) Math.sqrt(numFiles)) + 1;
-    }
+
 
     public static void playOutro(JFrame frame, String s){
         frame.addWindowListener(new WindowAdapter() {

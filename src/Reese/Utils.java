@@ -1,5 +1,8 @@
 package Reese;
 
+import java.io.File;
+import java.util.Objects;
+
 public class Utils {
     public static OS getOS() throws OperatingSystemNotFoundException {
         String os = System.getProperty("os.name");
@@ -16,6 +19,12 @@ public class Utils {
             throw new OperatingSystemNotFoundException("The application operating system is not supported!");
         }
 
+    }
+
+    public static int getSizeOfBoard(){
+        File dir = new File("./audio");
+        int numFiles = Objects.requireNonNull(dir.list()).length;
+        return ((int) Math.sqrt(numFiles)) + 1;
     }
 
 }
