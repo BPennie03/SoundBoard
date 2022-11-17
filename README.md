@@ -14,3 +14,4 @@ A soundboard application built with java swing
 - More controls
 - Improve button styling
 - Refactor driver class
+- Make a better Logo
