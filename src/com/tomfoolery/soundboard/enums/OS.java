@@ -1,4 +1,4 @@
-package com.tomfoolery.soundboard.Enums;
+package com.tomfoolery.soundboard.enums;
 
 public enum OS {
     OSX,

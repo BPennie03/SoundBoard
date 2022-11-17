@@ -1,4 +1,4 @@
-package com.tomfoolery.soundboard.SoundBoard;
+package com.tomfoolery.soundboard;
 
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;

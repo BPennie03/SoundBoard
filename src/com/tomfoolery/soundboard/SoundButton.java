@@ -1,4 +1,4 @@
-package com.tomfoolery.soundboard.SoundBoard;
+package com.tomfoolery.soundboard;
 
 import javax.sound.sampled.*;
 import javax.swing.*;

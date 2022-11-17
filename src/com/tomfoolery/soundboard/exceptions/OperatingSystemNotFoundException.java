@@ -1,4 +1,4 @@
-package com.tomfoolery.soundboard.Exceptions;
+package com.tomfoolery.soundboard.exceptions;
 
 public class OperatingSystemNotFoundException extends Exception {
     public OperatingSystemNotFoundException(String errorMessage) {

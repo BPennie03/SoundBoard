@@ -1,7 +1,7 @@
 package com.tomfoolery.soundboard.Utils;
 
-import com.tomfoolery.soundboard.Exceptions.OperatingSystemNotFoundException;
-import com.tomfoolery.soundboard.Enums.OS;
+import com.tomfoolery.soundboard.exceptions.OperatingSystemNotFoundException;
+import com.tomfoolery.soundboard.enums.OS;
 
 import java.io.File;
 import java.util.Objects;
