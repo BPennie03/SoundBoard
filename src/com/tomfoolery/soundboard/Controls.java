@@ -43,6 +43,7 @@ public class Controls extends JPanel {
         });
         this.add(btn);
 
+
     }
 
     public void initRefresh(){
