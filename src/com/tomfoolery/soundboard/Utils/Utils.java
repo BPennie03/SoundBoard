@@ -30,6 +30,4 @@ public class Utils {
         return ((int) Math.sqrt(numFiles)) + 1;
     }
 
-
-
 }

@@ -17,7 +17,15 @@ public class Controls extends JPanel {
         this.setBackground(Color.decode("#7B64ED"));
         initChooser();
         initRefresh();
+        initCustomize();
         //do other stuff
+    }
+
+    public void initCustomize(){
+        JButton btn = new JButton("Customize!");
+
+        btn.addActionListener(e -> new ColorFrame());
+        this.add(btn);
     }
 
     public void initChooser(){
