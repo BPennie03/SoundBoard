@@ -13,5 +13,5 @@ A soundboard application built with java swing
 - Make a better Logo
 
 ## Images
-![Image of the Main Soundboard Interface](Soundboard Image.png)
-![Image of the Color Chooser](Color Chooser.png)
+![Soundboard Image](SoundBoard/Soundboard Image.png)
+![Image of the Color Chooser](SoundBoard/Color Chooser.png)
