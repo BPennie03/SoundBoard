@@ -8,6 +8,10 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.io.File;
 import java.io.IOException;
+
+/**
+ * Class for the individual sound buttons and their respective methods
+ */
 public class SoundButton extends JButton implements MouseListener {
 
     private final File audioFile;
@@ -24,7 +28,10 @@ public class SoundButton extends JButton implements MouseListener {
         initSoundButton();
     }
 
-    public void initSoundButton(){
+    /**
+     * Initializes the buttons settings
+     */
+    public void initSoundButton() {
         this.setFocusPainted(false);
         this.setText(name);
         this.setBorder(new BevelBorder(BevelBorder.RAISED, this.borderColor1, this.borderColor2));
@@ -36,53 +43,63 @@ public class SoundButton extends JButton implements MouseListener {
         addMouseListener(this);
     }
 
-    public String getAudioFile(){
+    /**
+     * getter to get the audio file from the current button
+     * @return the audio file associated with this button
+     */
+    public String getAudioFile() {
         return this.audioFile.toString();
     }
 
-    public void play(){
-        try{
+    /**
+     * Plays the audio file associated with the button
+     */
+    public void play() {
+        try {
             AudioInputStream audioIn = AudioSystem.getAudioInputStream(this.audioFile.toURI().toURL());
             Clip clip = AudioSystem.getClip();
             clip.open(audioIn);
             clip.start();
-        }
-        catch (LineUnavailableException | UnsupportedAudioFileException | IOException err){
+        } catch (LineUnavailableException | UnsupportedAudioFileException | IOException err) {
             err.printStackTrace();
         }
     }
-    
+
     public String getName() {
         return this.name;
     }
 
-    @Override
-    public void mouseClicked(MouseEvent e){}
+    // The following MouseEvents are used to update the color/styling of the buttons
+    // for when you hover over, or click the buttons
 
     @Override
-    public void mouseReleased(MouseEvent e){
-        if (e.getSource()==this) {
+    public void mouseClicked(MouseEvent e) {
+    }
+
+    @Override
+    public void mouseReleased(MouseEvent e) {
+        if (e.getSource() == this) {
             this.setBorder(new BevelBorder(BevelBorder.RAISED, this.borderColor1, this.borderColor2));
         }
     }
 
     @Override
-    public void mousePressed(MouseEvent e){
-        if (e.getSource()==this) {
+    public void mousePressed(MouseEvent e) {
+        if (e.getSource() == this) {
             this.setBorder(new BevelBorder(BevelBorder.LOWERED, this.borderColor1, this.borderColor2));
         }
     }
 
     @Override
     public void mouseEntered(MouseEvent e) {
-        if (e.getSource()==this) {
+        if (e.getSource() == this) {
             this.setBackground(this.hoverColor);
         }
     }
 
     @Override
     public void mouseExited(MouseEvent e) {
-        if (e.getSource()==this) {
+        if (e.getSource() == this) {
             this.setBackground(this.backgroundColor);
         }
     }

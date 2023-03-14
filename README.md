@@ -8,10 +8,6 @@ A soundboard application built with java swing
 - Nathaniel Weiland, Multi-Platform testing
 
 ## TODO
-- Multi-platform testing
-- JSON parser
 - Custom user themes
 - More controls
-- Improve button styling
-- Refactor driver class
 - Make a better Logo

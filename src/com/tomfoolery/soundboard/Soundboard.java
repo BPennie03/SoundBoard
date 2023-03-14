@@ -6,6 +6,9 @@ import java.io.File;
 import java.util.LinkedList;
 import java.util.Objects;
 
+/**
+ * Class for the soundboard in which the buttons get added to
+ */
 public class Soundboard extends JPanel {
     public Soundboard(int size) {
 
@@ -21,6 +24,10 @@ public class Soundboard extends JPanel {
         makeButtons(Objects.requireNonNull(dir.listFiles()));
     }
 
+    /**
+     * Creates soundButons based on the selected files and adds them to the soundBoard
+     * @param files the array of files that were selected to be added
+     */
     public void makeButtons(File[] files) {
         LinkedList<SoundButton> btns = new LinkedList<>();
         for (File file : files) {
@@ -28,7 +35,7 @@ public class Soundboard extends JPanel {
             btns.add(new SoundButton(getName(file.getAbsolutePath()), filename));
         }
         for(SoundButton b : btns){
-            if(!b.getAudioFile().endsWith("wav")) continue;
+            if(!b.getAudioFile().endsWith("wav")) continue; // only currently supports .wav files
             b.addActionListener(e ->{
                 try{
                     b.play();
@@ -42,7 +49,11 @@ public class Soundboard extends JPanel {
 
     }
 
-
+    /**
+     * Takes the filename of the sound, then strips out just the name to be displayed on the button
+     * @param filename filename of the sound (.wav file)
+     * @return the name to be put on the button
+     */
     public static String getName(String filename) {
         return filename.substring(filename.lastIndexOf('/')+1, filename.lastIndexOf('.'));
     }

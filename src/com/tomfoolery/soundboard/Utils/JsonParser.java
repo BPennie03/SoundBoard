@@ -9,6 +9,9 @@ import java.util.HashMap;
 import java.util.Scanner;
 import java.util.Set;
 
+/**
+ * Custom Json Parser to allow and store custom user color themes
+ */
 public class JsonParser {
     private final File f;
     private final HashMap<String, String> map = new HashMap<>();
