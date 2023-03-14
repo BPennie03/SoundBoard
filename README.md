@@ -1,6 +1,8 @@
 # SoundBoard
 A soundboard application built with java swing
 
+Currently only supports .wav files!!!
+
 
 ## Credits 
 - Braden Pennie, Software Developer
